@@ -1,0 +1,9 @@
+
+        <div class="modal-body text-center yubikeyBody">
+            <img data-ng-show="!yub.authAttempt" src="assets/images/yubikey/locked.png" class="" />
+            <img data-ng-show="yub.authAttempt && yub.authSuccess == true" src="assets/images/yubikey/Success.png" class="" />
+            <img data-ng-show="yub.authAttempt && yub.authSuccess == false" src="assets/images/yubikey/fail.png" class="" />
+            <img data-ng-show="yub.authAttempt && yub.authLoading" src="assets/images/yubikey/loading.png" class="" />
+            <h2 class="">Activate Yubikey to Login</h2>
+        </div>
+<input type="text" id="yubikeyInput" data-ng-disabled="yub.authLoading" code="13" key-press="yub.yubikeyFinished();" data-ng-model="yub.yubikeyInput">

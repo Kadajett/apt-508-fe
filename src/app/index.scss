@@ -1,0 +1,102 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+@font-face {
+  font-family: 'Langdon';
+  src:  url('/assets/fonts/Langdon.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Adam';
+  src:  url('/assets/fonts/adam.otf') format('opentype');
+}
+
+.btn-auth {
+  @extend .btn-primary;
+  background-color: #3A3A3A;
+  border: none;
+  &:hover, &:active, &:focus {
+    background-color: #000000;
+    border: none;
+  }
+}
+
+body {
+  background: url('/assets/images/apt508Post.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .dashContainer {
+    margin-top: 20px;
+  }
+  .yubikeyBody {
+    background-color: #4D4D4D;
+    color: #fff;
+    text-shadow: 1px 1px black;
+    img {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+  }
+  #yubikeyInput {
+    width: 0px;
+    position: absolute;
+    height: 0px;
+    opacity: 0;
+  }
+  .jumbo {
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 50%;
+    max-height: 50%;
+
+    border-radius: 3px;
+    h1, p {
+      color: white;
+      text-shadow: 2px 2px #000000;
+      font-family: 'Adam', sans-serif;
+    }
+  }
+}
+
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

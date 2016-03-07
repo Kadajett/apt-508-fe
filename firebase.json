@@ -1,0 +1,18 @@
+{
+	"people": [{
+		"firstName": "James",
+		"lastName": "Stover",
+		"relation": "FAMILY",
+		"profileImage": null
+	}, {
+		"firstName": "Aisha",
+		"lastName": "Collazo",
+		"relationship": "FRIEND",
+		"profileImage": null
+	}],
+	"helloGoodbyes": [{
+		"time": null,
+		"person": null,
+		"type": "IN"
+	}]
+}
